@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "airtable": "^0.5.9",
+    "sinon": "^7.2.6"
+  }
+}
