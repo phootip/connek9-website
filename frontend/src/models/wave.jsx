@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/wave.css'
+import '../css/wave.scss'
 
 class Wave extends Component {
   render() {

@@ -9,6 +9,7 @@ import Location from './location';
 import FAQ from './faq';
 import FooterSponsors from './footer-sponsors';
 import FooterAuthors from './footer-authors';
+import Form from './form';
 
 import $ from 'jquery';
 // eslint-disable-next-line
@@ -56,6 +57,7 @@ class App extends Component {
           <TimeTable />
           <Location />
           <FAQ />
+          {/* <Form /> */}
           <Sponsors />
         </div>
 
