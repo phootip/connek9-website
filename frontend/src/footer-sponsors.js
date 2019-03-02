@@ -12,7 +12,6 @@ const Sponsors = () => (
     <PlaceHolderLogo color="gray"/>
     <PlaceHolderLogo color="black"/>
     <PlaceHolderLogo color="blue"/>
-
   </div>
   </>
 )
