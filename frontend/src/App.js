@@ -12,6 +12,9 @@ import FooterSponsors from './footer-sponsors';
 
 import { CSSTransition } from 'react-transition-group';
 
+
+import Animation from './models/animation'
+
 class App extends Component {
   flags = {
     0: {
@@ -62,6 +65,7 @@ class App extends Component {
         <div style={{position: 'absolute', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
           <FooterSponsors />
         </div>
+        <Animation/>
       </div>
     );
   }

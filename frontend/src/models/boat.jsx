@@ -5,8 +5,8 @@ import '../css/boat.scss'
 class Boat extends Component {
   render() {
     return (
-      <div class="boat-anime">
-        <img class="boat" src={process.env.PUBLIC_URL + '/image2vector.svg'}/>
+      <div className={`boat-anime ${this.props.className}`}>
+        <img className="boat" src={process.env.PUBLIC_URL + '/image2vector.svg'}/>
       </div>
     )
     

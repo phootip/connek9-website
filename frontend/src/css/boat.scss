@@ -18,6 +18,7 @@ $flag: #ff90aa;
 	// animation: boat 3.5s ease-in-out alternate infinite;
 	animation: boat 3.5s cubic-bezier(.35,.07,.35,.94) alternate infinite;
 	animation-delay: 0s;
+	transition: all 1s ease
 }
 
 .boat {
