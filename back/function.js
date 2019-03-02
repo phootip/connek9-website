@@ -10,11 +10,13 @@ exports.helloGET = (req, res) => {
 
 exports.register = (req, res) => {
     if (req.method !== "POST") {
-        return res.status(405).end()
+        return res.status(405).send("Method not allowed. Allowed Methods are: POST")
     }
     base('Registration').create({
         "Name": req.body.name,
         "Surname": req.body.surname,
+        "Nickname": req.body.nickname,
+        "Email": req.body.email,
         "Mobile No.": req.body.mobile,
         "University": req.body.university,
         "Year": req.body.year,
