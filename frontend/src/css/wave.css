@@ -7,25 +7,31 @@ body {
 }
 
 .ocean { 
-  height: 5vh;
+  height: calc(5vh - 30px);
   width:100%;
   position:fixed;
   bottom:0px;
   left:0;
   background: #015871;
+  z-index: -1;
 }
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
   position: fixed;
-  bottom: calc(5vh - 0px);
+  bottom: calc(5vh - 30px);
   width: 6400px;
   height: 198px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  /* transform: translate3d(0, 0, 0); */
   left: calc(50vw - 3200px);
   transition: transform 1s ease;
-	/* animation-play-state: paused */
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px){
+	.ocean .wave{
+		visibility: hidden;
+	}
 }
 
 .wave:nth-of-type(2) {
@@ -45,9 +51,9 @@ body {
 
 @keyframes swell {
   0%, 100% {
-    bottom: calc(5vh + 0px);
+    bottom: calc(5vh - 30px);
   }
   50% {
-    bottom: calc(5vh - 15px);
+    bottom: calc(5vh - 45px);
   }
 }

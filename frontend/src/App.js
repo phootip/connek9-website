@@ -91,7 +91,7 @@ class App extends Component {
               <FooterAuthors />
             </div>
           </CSSTransition>
-          <Animation/>
+          <Animation index={this.state.index}/>
       </div>
     );
   }

@@ -12,13 +12,19 @@ $flag: #ff90aa;
 
 .boat-anime {
 	position: fixed;
-	bottom: 85px;
+	bottom: 55px;
 	left: 50%;
 	margin-left: -$boatWidth/2;
 	animation: boat 3.5s cubic-bezier(.35,.07,.35,.94) alternate infinite;
 	animation-delay: 0s;
 	transition: all 1s ease;
-	// animation-play-state: paused
+	z-index: -2;
+}
+
+@media only screen and (max-width: 600px){
+	.boat-anime{
+		visibility: hidden;
+	}
 }
 
 .boat {
@@ -28,11 +34,10 @@ $flag: #ff90aa;
 
 @keyframes boat {
 	0% {
-		bottom: 85px;
+		bottom: 55px;
   }
 	100% {
-		bottom: 205px;
-		// bottom: calc(10% + 500px);
+		bottom: 175px;
 
   }
 }
