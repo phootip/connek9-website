@@ -27,6 +27,6 @@ exports.register = (req, res) => {
             res.status(500).send(err);
         }
 
-        res.send(record);
+        res.send(record.fields);
     });
 }

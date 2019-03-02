@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "14d19dfd-ff23-4200-ac5a-9362b0ae63a3",
+		"name": "conneck-api-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create row in airtable",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer key05Fks5YEstIX70",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"fields\": {\r\n\t    \"Name\": \"Phootip\",\r\n\t    \"Surname\": \"Phoo\",\r\n\t    \"Mobile No.\": \"123456\",\r\n\t    \"University\": \"Chulalongkorn University\",\r\n\t    \"Year\": \"4\",\r\n\t    \"Sex\": \"Male\",\r\n\t    \"T-shirt Size\": \"L\"\t\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://api.airtable.com/v0/appo1bgCfU4hNAzxO/Registration",
+					"protocol": "https",
+					"host": [
+						"api",
+						"airtable",
+						"com"
+					],
+					"path": [
+						"v0",
+						"appo1bgCfU4hNAzxO",
+						"Registration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
