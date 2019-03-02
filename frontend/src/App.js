@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SnapScroll from 'react-snap-scroll';
 import SplashScreen from './splash';
 import Sponsors from './sponsors';
 import About from './about';
@@ -9,6 +8,11 @@ import TimeTable from './timetable';
 import Location from './location';
 import FAQ from './faq';
 import FooterSponsors from './footer-sponsors';
+import FooterAuthors from './footer-authors';
+
+import $ from 'jquery';
+// eslint-disable-next-line
+import * as scrollify from 'jquery-scrollify';
 
 import { CSSTransition } from 'react-transition-group';
 
@@ -20,7 +24,7 @@ class App extends Component {
     0: {
       hideNavbar: true
     },
-    7: {
+    6: {
       useAlternateFooter: true
     }
   }
@@ -30,16 +34,22 @@ class App extends Component {
     flags: this.flags[0]
   }
 
+  componentDidMount() {
+    $.scrollify({
+      section: '.fullscreen',
+      before: (index) => this.setState({index, flags: this.flags[index] || {}})
+    })
+  }
 
   onSnapScrollIndexChanged = (index) => {
     this.setState({index, flags: this.flags[index] || {}})
   }
 
   render() {
-    const { hideNavbar } = this.state.flags
+    const { hideNavbar, useAlternateFooter } = this.state.flags
     return (
       <div className="App" style={{height: '100vh', width: '100vw'}}>
-        <SnapScroll indexChanged={this.onSnapScrollIndexChanged}>
+        <div>
           <SplashScreen />
           <About />
           <ReasonsToCome />
@@ -47,25 +57,41 @@ class App extends Component {
           <Location />
           <FAQ />
           <Sponsors />
-        </SnapScroll>
+        </div>
 
 
-        <div style={{position: 'absolute', top: '0px', left: '0px', right: '0px', display: 'flex', justifyContent: 'center'}}>
+        <div style={{position: 'fixed', top: '0px', left: '0px', right: '0px', display: 'flex', justifyContent: 'center'}}>
             <CSSTransition
               in={!hideNavbar}
               appear
               classNames="navbar"
-              timeout={800}
+              timeout={400}
               unmountOnExit
               mountOnEnter
             >
               <Navbar />
             </CSSTransition>
         </div>
-        <div style={{position: 'absolute', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
-          <FooterSponsors />
-        </div>
-        <Animation/>
+          <CSSTransition
+            in={!useAlternateFooter}
+            classNames="footer"
+            timeout={400}
+          >
+            <div style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+              <FooterSponsors />
+            </div>
+          </CSSTransition>
+          <CSSTransition
+            in={useAlternateFooter}
+            classNames="footer"
+            timeout={400}
+            mountOnEnter
+          >
+            <div style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+              <FooterAuthors />
+            </div>
+          </CSSTransition>
+          <Animation/>
       </div>
     );
   }

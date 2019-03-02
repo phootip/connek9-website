@@ -11,7 +11,9 @@ const Navbar = () => (
 )
 
 const NavbarLogo = () => (
-  <div className="navbar logo" style={{borderRadius: '50%', backgroundColor: 'pink', width: '5em', height: '5em'}}>
+  <div className="navbar logo"
+    style={{borderRadius: '50%', backgroundColor: 'pink', width: '5em', height: '5em', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+    Logo
   </div>
 )
 

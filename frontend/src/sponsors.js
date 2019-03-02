@@ -1,9 +1,12 @@
 import React from 'react';
+import FullScreen from './full-screen'
 
 const Sponsors = () => (
-  <div>
-    Sponsors
-  </div>
+  <FullScreen>
+    <div>
+      Sponsors
+    </div>
+  </FullScreen>
 )
  
 export default Sponsors;

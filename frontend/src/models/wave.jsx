@@ -6,7 +6,7 @@ class Wave extends Component {
     return (
       <div className={`ocean`}>
         <div className={`wave ${this.props.className}`}></div>
-        {/* <div className={`wave ${this.props.className}`}></div> */}
+        <div className={`wave ${this.props.className}`}></div>
       </div>
     )
   }

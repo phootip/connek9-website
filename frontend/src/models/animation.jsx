@@ -17,8 +17,9 @@ class Animation extends Component {
     if(this.state.moveLeft) classes.push('moveLeft')
 
     return (
+      // <div>
       <div>
-        <button style={{position: "absolute", top:'50%'}} onClick={this.move}> click me!! </button>
+        <button style={{position: "fixed", top:'50%'}} onClick={this.move}> click me!! </button>
         <Boat className={classes.join(' ')}/>
         <Wave className={classes.join(' ')}/>
       </div>

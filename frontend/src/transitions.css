@@ -13,7 +13,7 @@
 
 .navbar-enter-active {
     transform: translateY(0%);
-    transition: all 800ms ease-in-out;  
+    transition: all 400ms ease-in-out;  
 }
 
 .navbar-exit {
@@ -22,5 +22,31 @@
 
 .navbar-exit-active {
     transform: translateY(-100%);
-    transition: all 800ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.footer-enter {
+    opacity: 0;
+}
+
+.footer-enter-active {
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+}
+
+.footer-enter-done {
+    opacity: 1;
+}
+
+.footer-exit {
+    opacity: 1;
+}
+
+.footer-exit-active {
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.footer-exit-done {
+    opacity: 0;
 }
