@@ -9,12 +9,16 @@ const Sponsors = () => (
     <PlaceHolderLogo color="lime"/>
     <PlaceHolderLogo color="orange"/>
     <PlaceHolderLogo color="yellow"/>
+    <PlaceHolderLogo color="gray"/>
+    <PlaceHolderLogo color="black"/>
+    <PlaceHolderLogo color="blue"/>
+
   </div>
   </>
 )
 
 const PlaceHolderLogo = ({ color, text }) => (
-  <div style={{width: '2em', height: '2em', backgroundColor: color}}>
+  <div style={{width: '5em', height: '5em', backgroundColor: color}}>
     {text}
   </div>
 )
