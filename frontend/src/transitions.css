@@ -1,0 +1,26 @@
+.navbar-appear {
+    transform: translateY(-100%);
+}
+
+.navbar-appear-active {
+    transform: translateY(-100%);
+    transition: all 0ms ease-in-out;  
+}
+
+.navbar-enter {
+    transform: translateY(-100%);  
+}
+
+.navbar-enter-active {
+    transform: translateY(0%);
+    transition: all 800ms ease-in-out;  
+}
+
+.navbar-exit {
+    transform: translateY(0%);  
+}
+
+.navbar-exit-active {
+    transform: translateY(-100%);
+    transition: all 800ms ease-in-out;
+}
