@@ -2,7 +2,7 @@ import React from 'react';
 import FullScreen from './full-screen';
 
 const Location = () => (
-  <FullScreen>
+  <FullScreen sectionName="location">
     <div className="container" style={{display: 'flex', height: '100%'}}>
       <div className="about text container"
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '2em'}}

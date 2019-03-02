@@ -37,6 +37,7 @@ class App extends Component {
   componentDidMount() {
     $.scrollify({
       section: '.fullscreen',
+      sectionName: 'section-name',
       before: (index) => this.setState({index, flags: this.flags[index] || {}})
     })
   }
@@ -77,7 +78,9 @@ class App extends Component {
             classNames="footer"
             timeout={400}
           >
-            <div style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+            <div
+            className="footer footer-primary"
+            style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
               <FooterSponsors />
             </div>
           </CSSTransition>
@@ -87,7 +90,9 @@ class App extends Component {
             timeout={400}
             mountOnEnter
           >
-            <div style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+            <div 
+            className="footer footer-alternate"
+            style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
               <FooterAuthors />
             </div>
           </CSSTransition>
