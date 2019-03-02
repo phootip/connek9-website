@@ -16,6 +16,9 @@ import * as scrollify from 'jquery-scrollify';
 
 import { CSSTransition } from 'react-transition-group';
 
+
+import Animation from './models/animation'
+
 class App extends Component {
   flags = {
     0: {
@@ -93,6 +96,7 @@ class App extends Component {
               <FooterAuthors />
             </div>
           </CSSTransition>
+          <Animation index={this.state.index}/>
       </div>
     );
   }
