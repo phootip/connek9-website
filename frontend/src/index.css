@@ -110,6 +110,9 @@ button.register:active {
     /* background-image: url('http://touringtheatre.com/images/scroll2.png');
     background-position: center */
 }
+.content-text li{
+    font-family: 'Mitr', sans-serif;
+}
 
 @media only screen and (max-width: 768px) {
     .content-text{
