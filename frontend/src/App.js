@@ -1,4 +1,3 @@
-import './config.js'
 import React, { Component } from 'react';
 import SplashScreen from './splash';
 import Sponsors from './sponsors';
