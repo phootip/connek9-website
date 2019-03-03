@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    /* background-image:radial-gradient(rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); */
+    background-image:linear-gradient(#a7e0dd, #c2e7dd);
+    background-attachment: fixed;
 }
 
 @media only screen and (max-width: 768px) {
