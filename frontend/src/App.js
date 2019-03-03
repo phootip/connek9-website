@@ -1,3 +1,4 @@
+import './config.js'
 import React, { Component } from 'react';
 import SplashScreen from './splash';
 import Sponsors from './sponsors';
@@ -9,7 +10,7 @@ import Location from './location';
 import FAQ from './faq';
 import FooterSponsors from './footer-sponsors';
 import FooterAuthors from './footer-authors';
-import Form from './form';
+// import Form from './form';
 
 import $ from 'jquery';
 // eslint-disable-next-line

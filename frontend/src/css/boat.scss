@@ -11,13 +11,8 @@ $mast: #674333;
 $sail: #f2edea;
 $flag: #ff90aa;
 
-@media only screen and (max-width: 600px){
-	.boat-anime{
-		visibility: hidden;
-	}
-}
-
 .boat-anime {
+	display:none;
 	position: fixed;
 	bottom: 55px;
 	left: 50%;
@@ -26,6 +21,13 @@ $flag: #ff90aa;
 	animation-delay: 0s;
 	transition: all 1s ease;
 	z-index: -2;
+}
+
+@media only screen and (min-width: 600px){
+	.boat-anime{
+		// visibility: visible;
+		display: inline
+	}
 }
 
 

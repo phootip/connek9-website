@@ -1,0 +1,12 @@
+.map {
+  position: relative !important;
+	width: 50vw !important;
+	height: 50vh !important;
+}
+
+@media only screen and (max-width: 600px){
+  .map{
+    width: 80vw !important;
+    height: 80vh !important;
+  }
+}
