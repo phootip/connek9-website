@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
-const Listing = ({ places }) => (
-  <ul>{places && places.map(p => <li key={p.id}>{p.name}</li>)}</ul>
-);
+// const Listing = ({ places }) => (
+//   <ul>{places && places.map(p => <li key={p.id}>{p.name}</li>)}</ul>
+// );
 
 export class MapContainer extends Component {
   state = {

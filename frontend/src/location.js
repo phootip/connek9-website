@@ -5,13 +5,13 @@ import './css/map.scss'
 
 const Location = () => (
   <FullScreen sectionName="location">
-    <div className="container" style={{display: 'flex', height: '100%'}}>
-      <div className="about text container"
-        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '2em'}}
+    <div className="page-container" style={{display: 'flex', height: '100%'}}>
+      <div className="sub-container"
+        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3em'}}
       >
         <Map></Map>
       </div>
-      <div className="about header container"
+      <div className="sub-container page-header"
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
         <div className="splash logo header-text">

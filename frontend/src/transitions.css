@@ -8,19 +8,23 @@
 }
 
 .navbar-enter {
+    opacity: 0;
     transform: translateY(-100%);  
 }
 
 .navbar-enter-active {
+    opacity: 1;
     transform: translateY(0%);
     transition: all 400ms ease-in-out;  
 }
 
 .navbar-exit {
+    opacity: 1;
     transform: translateY(0%);  
 }
 
 .navbar-exit-active {
+    opacity: 0;
     transform: translateY(-100%);
     transition: all 400ms ease-in-out;
 }

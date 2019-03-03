@@ -3,18 +3,18 @@ import FullScreen from './full-screen';
 
 const About = () => (
   <FullScreen sectionName="about">
-    <div className="container" style={{display: 'flex', height: '100%'}}>
-      <div className="about header container"
+    <div className="page-container" style={{display: 'flex', height: '100%'}}>
+      <div className="sub-container page-header"
         // style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
-        <div className="splash logo header-text">
+        <div className="header-text">
           <h1> What is Connek? </h1>
         </div>
       </div>
       {/* <div className="about text container" */}
-      <div className="about text container"
-        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '2em'}}
+      <div className="sub-container text-container"
+        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
       >
         <div className='animatedParent animateOnce'>
           <p className="animated bounceInRight content-text">

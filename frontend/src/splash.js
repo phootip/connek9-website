@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import FullScreen from './full-screen';
 
+import LogoImage from './assets/logo-text-pink.png';
+
 class SplashScreen extends Component {
   render() { 
     return (
       <FullScreen sectionName="splash">
-        <div className="container" style={{display: 'flex', height: '100%'}}>
-          <div className="splash logo container"
+        <div className="page-container" style={{display: 'flex', height: '100%'}}>
+          <div className="sub-container"
             style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
           >
             <Logo />
           </div>
-          <div className="splash text container"
+          <div className="sub-container"
             style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
           >
-            <h1> DAY MONTH YEAR </h1>
-            <h2> CHULALONGKORN UNIVERSITY </h2>
-            <button className="register"> Register </button>
+            <h1> 7<sup>th</sup> APRIL 2019 </h1>
+            <h2> @ Chulalongkorn University </h2>
+            <button className="register"> Register Now </button>
           </div>
         </div>
       </FullScreen>
@@ -25,11 +27,11 @@ class SplashScreen extends Component {
 }
 
 const Logo = () => (
-  <div className="splash logo"
-    style={{backgroundColor: 'pink', borderRadius: '50%', width: '15em', height: '15em', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
-  >
-    <h1> Connek Logo </h1>
-  </div>
+  <img className="splash-logo"
+    alt="Connek Logo"
+    src={LogoImage}
+    style={{width: '40em', height: '40em', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+  />
 )
 
 export default SplashScreen;
