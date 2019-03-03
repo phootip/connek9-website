@@ -98,3 +98,21 @@ button.register:active {
 .footer {
     color: white;
 }
+
+.header-text{
+    color: #473221;
+}
+
+.content-text{
+    color: #c2885a;
+    font-family: 'Mitr', sans-serif;
+    font-size: 2em;
+    /* background-image: url('http://touringtheatre.com/images/scroll2.png');
+    background-position: center */
+}
+
+@media only screen and (max-width: 768px) {
+    .content-text{
+        font-size: 1em;
+    }
+}

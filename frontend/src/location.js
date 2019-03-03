@@ -14,7 +14,7 @@ const Location = () => (
       <div className="about header container"
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
-        <div className="splash logo">
+        <div className="splash logo header-text">
           <h1> Location </h1>
         </div>
       </div>
