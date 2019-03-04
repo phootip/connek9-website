@@ -9,7 +9,9 @@ const Navbar = () => (
       <Link to="#about"> About </Link>
       <Link to="#timetable" className="navbar-long-link"> Time Table </Link>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <NavbarLogo />
+        <Link to="#splash">
+          <NavbarLogo />
+        </Link>
         <a href={FORM_LINK} rel="noopener noreferrer" target="_blank" className="navbar-register"> Register </a>
       </div>
       <Link to="#location"> Location </Link>
@@ -22,9 +24,9 @@ const Link = ({ to, children, className="" }) => (
 )
 
 const NavbarLogo = () => (
-  <img className="hide-on-mobile"
+  <img className="hide-on-mobile navbar-logo"
     src={NavbarLogoImage}
-    style={{width: '8em', height: '8em'}}
+    style={{width: '6em', height: '6em'}}
     alt="Connek Logo"
   />   
 )
