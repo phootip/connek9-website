@@ -16,7 +16,7 @@ const ReasonsToCome = () => (
       <div className="about text container"
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '2em'}}
       >
-        <div className='animatedParent animateOnce'>
+        <div className='animatedParent'>
           <div className="animated bounceInRight content-text">
             <ul>
               <li>ได้เจอเพื่อนๆ พี่ๆ ร่วมชะตากรรมในสายงานเดียวกัน แบ่งปันประสบการณ์เพิ่ม <u><b>connek</b></u>tion ให้กับตัวเอง</li>
