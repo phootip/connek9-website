@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    /* background-image:radial-gradient(rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); */
-    background-image:linear-gradient(#a7e0dd, #c2e7dd);
+    background-image:linear-gradient(#a7e0dd, #ffffff);
     background-attachment: fixed;
 }
 
@@ -146,7 +145,7 @@ body {
 }
 
 .text-container {
-    text-align: center;
+    text-align: left;
 }
 
 .sub-container {
@@ -253,9 +252,8 @@ button.register:active {
 .content-text{
     color: #c2885a;
     font-family: 'Mitr', sans-serif;
-    /* background-image: url('http://touringtheatre.com/images/scroll2.png');
-    background-position: center */
 }
+
 .content-text li{
     font-family: 'Mitr', sans-serif;
 }
