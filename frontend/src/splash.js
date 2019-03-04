@@ -3,6 +3,8 @@ import FullScreen from './full-screen';
 
 import LogoImage from './assets/logo-text-pink.png';
 
+import { FORM_LINK } from './constants'
+
 class SplashScreen extends Component {
   render() { 
     return (
@@ -18,7 +20,7 @@ class SplashScreen extends Component {
           >
             <h1> 7<sup>th</sup> APRIL 2019 </h1>
             <h2> @ Chulalongkorn University </h2>
-            <button className="register"> Register Now </button>
+            <a className="register-button" href={FORM_LINK} rel="noopener noreferrer" target="_blank"> Register Now </a>
           </div>
         </div>
       </FullScreen>

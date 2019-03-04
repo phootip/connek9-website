@@ -2,6 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 
 import NavbarLogoImage from './assets/logo-without-text.png'
+import { FORM_LINK } from './constants';
 
 const Navbar = () => (
   <div className="navbar-container" style={{display: 'flex', width: '80vw', justifyContent: 'space-evenly', alignItems: 'center'}}>
@@ -9,7 +10,7 @@ const Navbar = () => (
       <Link to="#timetable" className="navbar-long-link"> Time Table </Link>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <NavbarLogo />
-        <Link to="#register" className="navbar-register"> Register </Link>
+        <a href={FORM_LINK} rel="noopener noreferrer" target="_blank" className="navbar-register"> Register </a>
       </div>
       <Link to="#location"> Location </Link>
       <Link to="#faq"> FAQ </Link>
@@ -21,7 +22,7 @@ const Link = ({ to, children, className="" }) => (
 )
 
 const NavbarLogo = () => (
-  <img className="navbar-logo"
+  <img className="hide-on-mobile"
     src={NavbarLogoImage}
     style={{width: '8em', height: '8em'}}
     alt="Connek Logo"
