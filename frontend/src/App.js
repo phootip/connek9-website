@@ -81,7 +81,7 @@ class App extends Component {
             timeout={400}
           >
             <div
-            className="footer footer-primary"
+            className="hide-on-mobile footer-primary"
             style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
               <FooterSponsors />
             </div>
@@ -93,7 +93,7 @@ class App extends Component {
             mountOnEnter
           >
             <div 
-            className="footer footer-alternate"
+            className="hide-on-mobile footer-alternate"
             style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
               <FooterAuthors />
             </div>

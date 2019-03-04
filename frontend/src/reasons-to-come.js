@@ -7,7 +7,7 @@ const ReasonsToCome = () => (
       <div className="sub-container page-header"
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
-        <div className="animatedParent">
+        <div className="animatedParent animateOnce">
           <div className="splash logo animated fadeInUpShort header-text">
             <h1> Reason to come </h1>
           </div>
@@ -17,7 +17,7 @@ const ReasonsToCome = () => (
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
       >
         <div className='animatedParent animateOnce'>
-          <div className="animated bounceInRight content-text">
+          <div className="animated fadeInRight content-text">
             <ul>
               <li>ได้เจอเพื่อนๆ พี่ๆ ร่วมชะตากรรมในสายงานเดียวกัน แบ่งปันประสบการณ์เพิ่ม <u><b>connek</b></u>tion ให้กับตัวเอง</li>
               <li>มีกิจกรรม ใช้แรงใช้ความคิดประลองปัญญา? มั้งไม่รู้อะต้องถามฝ่ายกิจดู แต่ที่แน่ๆคือสนุกแน่นอน</li>

@@ -4,7 +4,7 @@ import FullScreen from './full-screen'
 const Sponsors = () => (
   <FullScreen sectionName="sponsors">
     <div className="sponsors"
-    style={{display: 'flex', flexDirection: 'column', paddingTop: '10em'}}
+    style={{display: 'flex', flexDirection: 'column'}}
     >
       <h1 style={{alignSelf: 'center', textAlign: 'center', margin: 0, transform: 'translateX(10%)'}} className="header-text"> Sponsors </h1>
       <SponsorsList />

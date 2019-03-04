@@ -6,12 +6,12 @@ body {
 }
 
 @media only screen and (max-width: 420px) {
-    .footer {
-        display: none !important;
-    }
-
     .mobile-only {
         display: block !important;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
     }
 
     .navbar-logo {
@@ -21,6 +21,10 @@ body {
     .splash-logo {
         max-height: 20em !important;
         max-width: 20em !important;
+    }
+
+    .text-container {
+        justify-content: flex-start !important;
     }
 
     .page-header {
@@ -71,11 +75,31 @@ body {
         border-radius: 5px;
         background-color: gray;
     }
+
+    .sponsors {
+        padding-top: 16em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content-text{
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 800px) {
     .navbar-link {
         font-size: 1.5em;
+    }
+
+    .content-text{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-text {
+        font-size: 2em;
     }
 }
 
@@ -214,7 +238,11 @@ button.register:active {
     height: 4em;
 }
 
-.footer {
+.footer-primary {
+    color: white;
+}
+
+.footer-alternate {
     color: white;
 }
 
@@ -225,16 +253,9 @@ button.register:active {
 .content-text{
     color: #c2885a;
     font-family: 'Mitr', sans-serif;
-    font-size: 2em;
     /* background-image: url('http://touringtheatre.com/images/scroll2.png');
     background-position: center */
 }
 .content-text li{
     font-family: 'Mitr', sans-serif;
-}
-
-@media only screen and (max-width: 768px) {
-    .content-text{
-        font-size: 1em;
-    }
 }

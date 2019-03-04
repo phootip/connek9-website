@@ -9,7 +9,17 @@ const Location = () => (
       <div className="sub-container"
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3em'}}
       >
-        <Map></Map>
+        <div className="animatedParent animateOnce text-container">
+          <p className="animated fadeInRight content-text">
+            ลานเกียร์​ คณะวิศวกรรมศาสตร์​ จุฬาลงกรณ์มหาวิทยาลัย
+          </p>
+          <div className="mobile-only animated fadeInRight">
+            <a className="content-text" href="https://goo.gl/maps/TnZ7NYwx3aQ2">View on Google Maps</a>
+          </div>
+        </div>
+        <div className="hide-on-mobile">
+          <Map></Map>
+        </div>
       </div>
       <div className="sub-container page-header"
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
