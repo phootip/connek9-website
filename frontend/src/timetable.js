@@ -1,5 +1,6 @@
 import React from 'react';
 import FullScreen from './full-screen';
+import { TIME_TABLE } from './constants';
 
 const TimeTable = () => (
   <FullScreen sectionName="timetable">
@@ -23,10 +24,11 @@ const TimeTable = () => (
 const TimeTableList = () => (
   <div>
     <ul className="timetable">
-      <li> 10:00 do this </li>
-      <li> 11:00 do that </li>
-      <li> 13:00 do that again </li>
-      <li> 14:00 do this again </li>
+      {
+        TIME_TABLE.map(item => (
+          <li> {item.time} <span className="timetable-item-content">{item.content}</span> </li>
+        ))
+      }
     </ul>
   </div>
 )
