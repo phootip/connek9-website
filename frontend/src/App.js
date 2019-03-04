@@ -63,7 +63,7 @@ class App extends Component {
         </div>
 
 
-        <div style={{position: 'fixed', top: '0px', left: '0px', right: '0px', display: 'flex', justifyContent: 'center'}}>
+        <div className="navbar">
             <CSSTransition
               in={!hideNavbar}
               appear

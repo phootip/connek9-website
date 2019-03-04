@@ -8,6 +8,11 @@ const Sponsors = () => (
     >
       <h1 style={{alignSelf: 'center', textAlign: 'center', margin: 0, transform: 'translateX(10%)'}} className="header-text"> Sponsors </h1>
       <SponsorsList />
+      <div className="mobile-only" style={{paddingBottom: '4em', textAlign: 'center'}}>
+        Website designed by Athipat Nampetch
+        <br/>
+        Made by @peawyoyoyin, @maxminor, @phootip
+      </div>
     </div>
   </FullScreen>
 )
