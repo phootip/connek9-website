@@ -1,8 +1,21 @@
 import React from 'react';
 
+import { AUTHORS } from './constants';
+
+const AuthorLink = ({author}) => (
+  <a href={author.link} target="_blank" rel="noopener noreferrer" className="author-link">
+    {author.name}
+  </a>
+)
+
 const FooterAuthors = () => (
   <div>
-    Website designed by Athipat Nampetch, made with love by @peawyoyoyin, @maxminor, @phootip
+    Website designed by 
+    <AuthorLink author={AUTHORS.nott} />,
+    made with love by
+    <AuthorLink author={AUTHORS.peaw} />, 
+    <AuthorLink author={AUTHORS.tun} />, 
+    <AuthorLink author={AUTHORS.phootip} />.
   </div>
 )
 

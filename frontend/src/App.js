@@ -80,9 +80,7 @@ class App extends Component {
             classNames="footer"
             timeout={400}
           >
-            <div
-            className="hide-on-mobile footer"
-            style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+            <div className="hide-on-mobile footer">
               <FooterSponsors />
             </div>
           </CSSTransition>
@@ -91,10 +89,9 @@ class App extends Component {
             classNames="footer"
             timeout={400}
             mountOnEnter
+            unmountOnExit
           >
-            <div 
-            className="hide-on-mobile footer"
-            style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+            <div className="hide-on-mobile footer" >
               <FooterAuthors />
             </div>
           </CSSTransition>

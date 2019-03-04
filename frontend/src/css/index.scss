@@ -92,6 +92,12 @@ body {
     }
 }
 
+.author-link {
+    color: white;
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+}
+
 .navbar {
     position: fixed;
     justify-content: center;
@@ -258,6 +264,12 @@ body {
 
 .footer {
     color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .header-text{
