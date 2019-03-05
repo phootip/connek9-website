@@ -1,7 +1,10 @@
+html{
+    background-attachment: fixed;
+    background-image:linear-gradient(#a7e0dd, #ffffff);    
+}
+
 body {
     margin: 0;
-    background-image:linear-gradient(#a7e0dd, #ffffff);
-    background-attachment: fixed;
 }
 
 @media only screen and (max-width: 420px) {
