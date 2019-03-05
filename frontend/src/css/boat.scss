@@ -1,5 +1,6 @@
 $waveSpeed: 10;
 $boatWidth: 250px;
+$boatY: 30px;
 
 $waveFront: #0cabaa;
 $waveBack: #108291;
@@ -11,6 +12,7 @@ $sail: #f2edea;
 $flag: #ff90aa;
 
 .boat-anime {
+	display:none;
 	position: fixed;
 	bottom: 55px;
 	left: 50%;
@@ -21,11 +23,13 @@ $flag: #ff90aa;
 	z-index: -2;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 600px){
 	.boat-anime{
-		visibility: hidden;
+		// visibility: visible;
+		display: inline
 	}
 }
+
 
 .boat {
 	width:250px;
@@ -34,10 +38,10 @@ $flag: #ff90aa;
 
 @keyframes boat {
 	0% {
-		bottom: 55px;
+		bottom: $boatY;
   }
 	100% {
-		bottom: 175px;
+		bottom: $boatY+120;
 
   }
 }

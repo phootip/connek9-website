@@ -3,18 +3,29 @@ import FullScreen from './full-screen';
 
 const ReasonsToCome = () => (
   <FullScreen sectionName="reasons">
-    <div className="container" style={{display: 'flex', height: '100%'}}>
-      <div className="about header container"
+    <div className="page-container" style={{display: 'flex', height: '100%'}}>
+      <div className="sub-container page-header"
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
-        <div className="splash logo">
-          <h1> Reasons to Come </h1>
+        <div className="animatedParent animateOnce">
+          <div className="splash logo animated fadeInUpShort header-text">
+            <h1> Reason to come </h1>
+          </div>
         </div>
       </div>
-      <div className="about text container"
-        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '2em'}}
+      <div className="sub-container text-container"
+        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
       >
-        สมิติเวชตี๋พุทโธ ไลน์เฟรช ปอดแหกเที่ยงคืนตรวจสอบ ชาร์ปโคโยตีแคปเซนเซอร์เตี๊ยม ไฟแนนซ์บุญคุณแซลมอนเวณิกา นายพราน ออร์แกนิกแดนซ์เลคเชอร์ ไกด์วอร์รูม อีโรติกวอฟเฟิล โพลารอยด์ยะเยือกโมจิ เคลมนิรันดร์นางแบบ พีเรียดคอนโด โซน เด้อคอลัมน์ โอวัลติน แรงผลักเทียมทานแอ็คชั่นว่ะเพียว
+        <div className='animatedParent animateOnce'>
+          <div className="animated fadeInRight content-text">
+            <ul>
+              <li>ได้เจอเพื่อนๆ พี่ๆ ผู้ร่วมชะตากรรมในสายงานเดียวกัน แบ่งปันประสบการณ์เพิ่ม connektion ให้กับตัวเอง</li>
+              <li>มีกิจกรรม ใช้แรงใช้ความคิดประลองปัญญา? มั้งไม่รู้อะต้องถามฝ่ายกิจดู แต่ที่แน่ๆคือสนุกแน่นอน</li>
+              <li>มีของฟรี(ใครๆก็ชอบ)แจกจากสปอนเซอร์ โดยเฉพาะสติกเกอร์สุด Geek เอาไปแปะคอมแก้เบื่อเพื่อประกาศให้โลกรู้ว่าเราอะภาคคอม</li>
+              <li>เว็บก็มี logoก็มี themeก็มี สปอนเซอร์ก็มี สตาฟก็มี ของกินยังมี แต่ขาดอย่างเดียวคือยังไม่มีเธอ...หมายถึงยังไม่มีน้องๆ อย่าลืมมาแล้วชวนเพื่อนมาด้วยนะจ๊ะ</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </FullScreen>

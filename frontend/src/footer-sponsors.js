@@ -1,8 +1,11 @@
 import React from 'react';
+import Link from './link';
 
 const Sponsors = () => (
   <>
-  Sponsored by:
+  <Link to="#sponsors" className="author-link">
+    Sponsors:
+  </Link>
   <div style={{display: 'inline-flex', flexDirection: 'row', justifyContent: 'space-evenly', flexGrow: '1'}}>
     <PlaceHolderLogo color="red"/>
     <PlaceHolderLogo color="cyan"/>

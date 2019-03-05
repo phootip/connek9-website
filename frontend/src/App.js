@@ -9,6 +9,7 @@ import Location from './location';
 import FAQ from './faq';
 import FooterSponsors from './footer-sponsors';
 import FooterAuthors from './footer-authors';
+// import Form from './form';
 
 import $ from 'jquery';
 // eslint-disable-next-line
@@ -57,11 +58,12 @@ class App extends Component {
           <TimeTable />
           <Location />
           <FAQ />
+          {/* <Form /> */}
           <Sponsors />
         </div>
 
 
-        <div style={{position: 'fixed', top: '0px', left: '0px', right: '0px', display: 'flex', justifyContent: 'center'}}>
+        <div className="navbar">
             <CSSTransition
               in={!hideNavbar}
               appear
@@ -78,9 +80,7 @@ class App extends Component {
             classNames="footer"
             timeout={400}
           >
-            <div
-            className="footer footer-primary"
-            style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+            <div className="hide-on-mobile footer">
               <FooterSponsors />
             </div>
           </CSSTransition>
@@ -89,10 +89,9 @@ class App extends Component {
             classNames="footer"
             timeout={400}
             mountOnEnter
+            unmountOnExit
           >
-            <div 
-            className="footer footer-alternate"
-            style={{position: 'fixed', bottom: '0px', left: '0px', right: '0px', display: 'flex', alignItems: 'flex-end'}}>
+            <div className="hide-on-mobile footer" >
               <FooterAuthors />
             </div>
           </CSSTransition>
