@@ -14,7 +14,7 @@ const FAQ = () => (
   <FullScreen sectionName="faq">
     <div className="page-container" style={{display: 'flex', height: '100%', position: 'relative'}}>
       <div className="sub-container"
-        style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center', padding:'2em'}}
+        style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center', padding:'5em'}}
       >
        <FAQItem faq={FAQs[0]} />
        <FAQItem faq={FAQs[2]} />

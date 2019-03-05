@@ -27,12 +27,12 @@ const SponsorsList = () => (
 )
 
 const SponsorIcon = ({ src, name, size }) => {
-  let h = '3em'
-  if(size == 'L') h='8em'
-  else if(size == 'M') h='5em'
+  let w = '10em'
+  if(size == 'L') w='40em'
+  else if(size == 'M') w='15em'
   return(
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '3em'}}>
-      <img src={src} style={{width: 'auto',height:h}}/>
+      <img src={src} style={{width: w,height:'auto', maxHeight:'auto', maxWidth:'90vw'}}/>
       <span> {name} </span>
     </div>
   )
