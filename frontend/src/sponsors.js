@@ -1,5 +1,7 @@
 import React from 'react';
 import FullScreen from './full-screen'
+import Yannix from './assets/yannix.png'
+import Sunday from './assets/sunday.png'
 
 const Sponsors = () => (
   <FullScreen sectionName="sponsors">
@@ -18,25 +20,22 @@ const Sponsors = () => (
 )
 
 const SponsorsList = () => (
-  <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between'}}>
-    <SponsorIcon color="red" />
-    <SponsorIcon color="green" />
-    <SponsorIcon color="blue" />
-    <SponsorIcon color="orange" />
-    <SponsorIcon color="cyan" />
-    <SponsorIcon color="lime" />
-    <SponsorIcon color="purple" />
-    <SponsorIcon color="gray" />
+  <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',alignItems:'baseline'}}>
+    <SponsorIcon src={Yannix} name="Yannix" size="L"/>
+    <SponsorIcon src={Sunday} name="Sunday" size="M"/>
   </div>
 )
 
-const SponsorIcon = ({ color }) => (
-  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '3em'}}>
-    <div style={{width: '5em', height: '5em', backgroundColor: color}}>
+const SponsorIcon = ({ src, name, size }) => {
+  let h = '3em'
+  if(size == 'L') h='8em'
+  else if(size == 'M') h='5em'
+  return(
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '3em'}}>
+      <img src={src} style={{width: 'auto',height:h}}/>
+      <span> {name} </span>
     </div>
-    <span> Name </span>
-    <span> Gave money </span>
-  </div>
-)
+  )
+}
  
 export default Sponsors;
