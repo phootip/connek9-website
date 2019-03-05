@@ -9,7 +9,7 @@ const AuthorLink = ({author}) => (
 )
 
 const FooterAuthors = () => (
-  <div>
+  <div style={{fontSize: "0.75em"}}>
     Website designed by 
     <AuthorLink author={AUTHORS.nott} />,
     made with love by
