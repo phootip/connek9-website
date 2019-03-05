@@ -75,7 +75,7 @@ class App extends Component {
               <Navbar />
             </CSSTransition>
         </div>
-          <CSSTransition
+          {/* <CSSTransition
             in={!useAlternateFooter}
             classNames="footer"
             timeout={400}
@@ -94,7 +94,10 @@ class App extends Component {
             <div className="hide-on-mobile footer" >
               <FooterAuthors />
             </div>
-          </CSSTransition>
+          </CSSTransition> */}
+          <div className="hide-on-mobile footer" >
+              <FooterAuthors />
+          </div>
           <Animation index={this.state.index}/>
       </div>
     );
