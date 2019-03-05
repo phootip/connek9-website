@@ -8,7 +8,7 @@ const About = () => (
         // style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
-        <div className="animatedParent animateOnce header-text">
+        <div className="animatedParent animateOnce">
           <div className="splash logo animated fadeInUpShort header-text">
             <h1> What is Connek? </h1>
           </div>
