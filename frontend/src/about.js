@@ -20,7 +20,7 @@ const About = () => (
       >
         {/* <div className='animatedParent animateOnce'> */}
         <div className='animatedParent animateOnce'>
-          <p className="animated fadeInRight content-text">
+          <p className="animated fadeInRight content-text" style={{padding:'2em'}}>
             งาน ConneK เป็นงานที่จัดขึ้นของนิสิตภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัยและมหาวิทยาลัยเกษตรศาสตร์ 
             ภายในงานจะมีกิจกรรมที่ให้นิสิตของทั้งสองมหาวิทยาลัยทำร่วมกัน โดยมีจุดมุ่งหมายเพื่อสานสัมพันธ์ระหว่างนิสิตของ 2 มหาวิทยาลัย
           </p>
