@@ -23,7 +23,7 @@ const FAQ = () => (
       style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 'auto'}}>
         <h1 className="header-text"> FAQ </h1>
       </div>
-      <div className="sub-container"
+      <div className="sub-container faq-footer"
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding:'2em'}}
       >
         <FAQItem faq={FAQs[1]} />
