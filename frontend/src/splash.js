@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FullScreen from './full-screen';
 
-import LogoImage from './assets/logo-text-pink.png';
+import LogoImage from './assets/logo-text-black.png';
 
 import { FORM_LINK } from './constants'
 
