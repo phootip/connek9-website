@@ -49,7 +49,7 @@ class App extends Component {
   render() {
     const { hideNavbar } = this.state.flags
     return (
-      <div className="App">
+      <div className="App" style={{overflowX: 'hidden'}}>
         <SplashScreen />
         <About />
         <ReasonsToCome />

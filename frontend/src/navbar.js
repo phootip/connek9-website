@@ -19,7 +19,7 @@ const Navbar = () => (
   </div>
 )
 const NavbarLogo = () => (
-  <img className="hide-on-mobile navbar-logo"
+  <img className="navbar-logo"
     src={NavbarLogoImage}
     alt="Connek Logo"
   />   

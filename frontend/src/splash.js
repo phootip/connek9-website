@@ -19,7 +19,7 @@ class SplashScreen extends Component {
             style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
           >
             <h1> 7<sup>th</sup> APRIL 2019 </h1>
-            <h2> @ Chulalongkorn University </h2>
+            <h2 style={{textAlign: 'center'}}> @ Chulalongkorn University </h2>
             <a className="register-button" href={FORM_LINK} rel="noopener noreferrer" target="_blank"> Register Now </a>
           </div>
         </div>

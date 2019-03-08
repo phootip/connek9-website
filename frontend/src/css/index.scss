@@ -1,4 +1,4 @@
-html{
+html {
     background-attachment: fixed;
     background-image: linear-gradient(#a7e0dd, #ffffff); 
     -webkit-text-size-adjust: none;   
@@ -9,22 +9,11 @@ body {
 }
 
 @media only screen and (max-width: 420px) {
-    .mobile-only {
-        display: block !important;
-    }
-
     .add-padding-mobile {
-        padding-left: 2em;
+        // padding-left: 2em;
     }
 
-    .hide-on-mobile {
-        display: none !important;
-    }
 
-    .splash-logo {
-        max-height: 20em !important;
-        max-width: 20em !important;
-    }
 
     .text-container {
         justify-content: flex-start !important;
@@ -34,13 +23,6 @@ body {
         order: -1;
         height: 3em;
         flex: 0 0 auto !important;
-    }
-
-    .navbar {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-bottom: 1em;
     }
 
     .navbar-link {
@@ -61,12 +43,11 @@ body {
     }
 
     .page-container {
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
-        padding-left: 3em;
-        padding-right: 3em;
     }
 
     .faq-text {
@@ -82,58 +63,78 @@ body {
     }
 
     ul {
-        padding: 15%;
         text-align: left;
     }
 }
 
-@media only screen and (min-width: 420px) {
-    .navbar {
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
-    .navbar-register {
-        font-size: 1.5em;
-        padding: 0.5em;
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    .content-text{
-        font-size: 1em;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .navbar-link {
-        font-size: 1.2em;
+    .faq-page {
+        align-items: flex-start !important;
+        min-height: 450px;
     }
 
-    .content-text{
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .content-text {
-        font-size: 1.8em;
+    .timetable>li {
+        font-size: 0.9em;
     }
 
-    .faq-text {
-        font-size: 1.5em
+    .mobile-only {
+        display: block !important;
     }
-}
 
-@media only screen and (max-width: 400px) {
     .splash-logo {
         max-height: 10em !important;
         max-width: 10em !important;
     }
 
     .content-text {
-        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .navbar {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 1em;
+    }
+
+    .navbar-logo {
+        display: none !important;
+    }
+
+
+    .navbar-register {
+        color: #4682B4;
+    }
+
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-link {
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 1em;
+    }
+
+    .navbar-register {
+        background-color: #727d71;
+        color: white;
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .faq-text {
+        font-size: 1.5em;
     }
 }
 
@@ -151,8 +152,9 @@ body {
 }
 
 .navbar-register {
-    background-color: #727d71;
-    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
     border-radius: 5px;
     text-decoration: none;
 
@@ -215,18 +217,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .text-container {
     text-align: center;
 }
 
-.sub-container {
-    min-width: 350px;
-}
-
 * {
-    box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -254,10 +252,6 @@ body {
     }
 }
 
-.container {
-    min-width: 300px;
-}
-
 .navbar-link {
     text-decoration: none;
     font-weight: bold;
@@ -269,7 +263,7 @@ body {
 
 .timetable>li {
     margin-top: -1em;
-    margin-left: 1em;
+    padding: 0em;
 
     &::before {
         content: '';
@@ -328,7 +322,6 @@ body {
 
 .header-text{
     color: #473221;
-    // padding-bottom: 30%;
 }
 
 .content-text{

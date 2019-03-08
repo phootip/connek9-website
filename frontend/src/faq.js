@@ -12,7 +12,7 @@ const FAQItem = ({ faq }) => (
 
 const FAQ = () => (
   <FullScreen className="faq-page" sectionName="faq">
-    <div className="page-container" style={{display: 'flex', position: 'relative'}}>
+    <div className="page-container" style={{display: 'flex'}}>
       <div className="sub-container faq-container"
         style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
       >
@@ -23,13 +23,8 @@ const FAQ = () => (
       style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 'auto'}}>
         <h1 className="header-text"> FAQ </h1>
       </div>
-<<<<<<< HEAD
       <div className="sub-container faq-container"
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
-=======
-      <div className="sub-container faq-footer"
-        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding:'2em'}}
->>>>>>> ce2630a72c05d599670a3279ddad2cb671ff6526
       >
         <FAQItem faq={FAQs[1]} />
         <FAQItem faq={FAQs[3]} />
