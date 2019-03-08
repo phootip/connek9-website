@@ -1,6 +1,7 @@
 html{
     background-attachment: fixed;
-    background-image:linear-gradient(#a7e0dd, #ffffff);    
+    background-image: linear-gradient(#a7e0dd, #ffffff); 
+    -webkit-text-size-adjust: none;   
 }
 
 body {
@@ -10,6 +11,10 @@ body {
 @media only screen and (max-width: 420px) {
     .mobile-only {
         display: block !important;
+    }
+
+    .add-padding-mobile {
+        padding-left: 2em;
     }
 
     .hide-on-mobile {
@@ -28,7 +33,7 @@ body {
     .page-header {
         order: -1;
         height: 3em;
-        flex: 0 1 auto !important;
+        flex: 0 0 auto !important;
     }
 
     .navbar {
@@ -54,6 +59,32 @@ body {
         word-wrap: normal;
         font-size: 0.8em;
     }
+
+    .page-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .faq-text {
+        margin: 0;
+    }
+
+    .faq-header {
+        margin: 0;
+    }
+
+    .faq-container {
+        flex: none !important;
+    }
+
+    ul {
+        padding: 15%;
+        text-align: left;
+    }
 }
 
 @media only screen and (min-width: 420px) {
@@ -66,10 +97,6 @@ body {
     .navbar-register {
         font-size: 1.5em;
         padding: 0.5em;
-    }
-
-    .sponsors {
-        padding-top: 16em;
     }
 }
 
@@ -98,6 +125,18 @@ body {
         font-size: 1.5em
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .splash-logo {
+        max-height: 10em !important;
+        max-width: 10em !important;
+    }
+
+    .content-text {
+        text-align: left;
+    }
+}
+
 
 .author-link {
     color: white;
@@ -166,7 +205,10 @@ body {
 
 .fullscreen {
     width: 99vw;
-    height: 99vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-container {
@@ -184,6 +226,7 @@ body {
 }
 
 * {
+    box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -291,7 +334,6 @@ body {
 .content-text{
     color: #c2885a;
     font-family: 'Mitr', sans-serif;
-    text-align:left;
 }
 
 .content-text li{

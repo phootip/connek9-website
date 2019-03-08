@@ -4,9 +4,9 @@ import { TIME_TABLE } from './constants';
 
 const TimeTable = () => (
   <FullScreen sectionName="timetable">
-    <div className="page-container" style={{display: 'flex', height: '100%'}}>
+    <div className="page-container" style={{display: 'flex'}}>
       <div className="sub-container"
-        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '2em'}}
+        style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}
       >
         <TimeTableList />
       </div>

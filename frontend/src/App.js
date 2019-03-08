@@ -7,7 +7,6 @@ import ReasonsToCome from './reasons-to-come';
 import TimeTable from './timetable';
 import Location from './location';
 import FAQ from './faq';
-import FooterSponsors from './footer-sponsors';
 import FooterAuthors from './footer-authors';
 // import Form from './form';
 
@@ -48,19 +47,17 @@ class App extends Component {
   }
 
   render() {
-    const { hideNavbar, useAlternateFooter } = this.state.flags
+    const { hideNavbar } = this.state.flags
     return (
-      <div className="App" style={{height: '100vh', width: '100vw'}}>
-        <div>
-          <SplashScreen />
-          <About />
-          <ReasonsToCome />
-          <TimeTable />
-          <Location />
-          <FAQ />
-          {/* <Form /> */}
-          <Sponsors />
-        </div>
+      <div className="App">
+        <SplashScreen />
+        <About />
+        <ReasonsToCome />
+        <TimeTable />
+        <Location />
+        <FAQ />
+        {/* <Form /> */}
+        <Sponsors />
 
 
         <div className="navbar">

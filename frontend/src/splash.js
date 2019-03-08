@@ -9,7 +9,7 @@ class SplashScreen extends Component {
   render() { 
     return (
       <FullScreen sectionName="splash">
-        <div className="page-container" style={{display: 'flex', height: '100%'}}>
+        <div className="page-container" style={{display: 'flex'}}>
           <div className="sub-container"
             style={{display: 'flex', flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
           >

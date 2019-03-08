@@ -5,12 +5,12 @@ import './css/map.scss'
 
 const Location = () => (
   <FullScreen sectionName="location">
-    <div className="page-container" style={{display: 'flex', height: '100%'}}>
+    <div className="page-container" style={{display: 'flex'}}>
       <div className="sub-container"
         style={{display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3em'}}
       >
         <div className="animatedParent animateOnce text-container">
-          <p className="animated fadeInRight content-text">
+          <p className="animated fadeInRight content-text add-padding-mobile">
             ลานเกียร์​ คณะวิศวกรรมศาสตร์​ จุฬาลงกรณ์มหาวิทยาลัย
           </p>
           <div className="mobile-only animated fadeInRight">
